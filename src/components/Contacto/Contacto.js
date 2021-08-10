@@ -6,6 +6,7 @@ const Contacto = () => {
     <div
       className="light-back"
       style={{
+        position: "relative",
         display: "flex",
         flexDirection: "column",
         padding: "80px",
@@ -13,7 +14,20 @@ const Contacto = () => {
         alignItems: "center",
       }}
     >
-      <h1 className="py-2 title-cv">Contact</h1>
+      <div
+        style={{
+          position: "absolute",
+          color: "#eeeeee",
+          zIndex: "0",
+          top: "0",
+          letf: "5%",
+        }}
+      >
+        <h3 style={{ fontSize: "150px", zIndex: "-1" }}>Contact</h3>
+      </div>
+      <h1 className="py-2 title-cv" style={{ zIndex: "1" }}>
+        Contact
+      </h1>
       <hr
         width="25px"
         style={{ margin: "0px auto 30px auto", border: "2px solid black" }}

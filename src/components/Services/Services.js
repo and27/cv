@@ -7,13 +7,28 @@ const Services = () => {
     <div
       className="light-back"
       style={{
+        position: "relative",
         display: "flex",
         flexDirection: "column",
         padding: "100px 120px 150px 120px",
         textAlign: "center",
       }}
     >
-      <h1 className="py-2 title-cv">Experience</h1>
+      <div
+        style={{
+          position: "absolute",
+          color: "#eeeeee",
+          zIndex: "0",
+          top: "0",
+          letf: "10%",
+        }}
+      >
+        <h3 style={{ fontSize: "150px" }}>Experience</h3>
+      </div>
+
+      <h1 className="py-2 title-cv" style={{ zIndex: "1" }}>
+        Experience
+      </h1>
       <hr
         width="25px"
         style={{ margin: "0px auto 30px auto", border: "2px solid black" }}
