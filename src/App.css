@@ -45,3 +45,26 @@
   width: 9rem !important;
   background-color: transparent;
 }
+
+a {
+  color: white;
+}
+a:active {
+  color: white;
+}
+
+a:hover {
+  color: #929292;
+}
+
+.main-social a {
+  color: black;
+}
+
+.main-social a:hover {
+  color: #929292;
+}
+
+.main-social a:active {
+  color: black;
+}
