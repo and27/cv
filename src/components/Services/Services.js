@@ -23,7 +23,9 @@ const Services = () => {
           letf: "10%",
         }}
       >
-        <h3 style={{ fontSize: "150px" }}>Experience</h3>
+        <h3 className="back-titles" style={{ fontSize: "150px" }}>
+          Experience
+        </h3>
       </div>
 
       <h1 className="py-2 title-cv" style={{ zIndex: "1" }}>
@@ -36,8 +38,11 @@ const Services = () => {
       <div
         style={{
           display: "flex",
+          flexWrap: "wrap",
           flexDirection: "row",
           alignItems: "flex-start",
+          justifyContent: "space-around",
+          margin: "0",
         }}
       >
         <ServiceCard

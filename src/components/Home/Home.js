@@ -11,14 +11,15 @@ const Home = () => {
         style={{
           minHeight: "100vh",
           display: "flex",
+          flexWrap: "wrap",
           flexDirection: "row",
           alignItems: "center",
           justifyContent: "space-between",
         }}
       >
         <div
-          className="cv-title d-flex flex-column"
-          style={{ margin: "0 auto" }}
+          className="cv-title d-flex flex-column main-section"
+          style={{ margin: "0 auto", position: "relative" }}
         >
           <h1 style={{ color: "white", zIndex: "2" }}>
             Hi, I'm <br /> Andrés Banda
@@ -26,12 +27,14 @@ const Home = () => {
           <div
             style={{
               position: "absolute",
-              left: "300px",
+              left: "180px",
               color: "#101010",
               zIndex: "0",
             }}
           >
-            <h3 style={{ fontSize: "150px" }}>Welcome</h3>
+            <h3 className="back-titles" style={{ fontSize: "8rem" }}>
+              Welcome
+            </h3>
           </div>
           <p className="cv-description pb-2" style={{ zIndex: "0" }}>
             Computer Science Engineer. Web and Mobile developer. Entrepeneur
@@ -41,7 +44,7 @@ const Home = () => {
           </Button>
         </div>
         <div className="d-flex">
-          <img src={photo} style={{ height: "100vh" }} />
+          <img className="main-photo" src={photo} style={{ height: "100vh" }} />
         </div>
         <div
           className="main-social"

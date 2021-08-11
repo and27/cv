@@ -68,3 +68,28 @@ a:hover {
 .main-social a:active {
   color: black;
 }
+
+@media only screen and (max-width: 900px) {
+  .cv-title h1 {
+    padding-top: 5rem;
+  }
+
+  .main-photo {
+    width: 100%;
+    max-height: 30rem;
+    object-fit: cover;
+  }
+
+  .back-titles {
+    display: none;
+  }
+
+  .main-section {
+    padding: 2rem;
+  }
+
+  .contact-section {
+    padding: 5px !important;
+    margin: 0px !important;
+  }
+}

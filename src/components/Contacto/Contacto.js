@@ -4,7 +4,7 @@ import photo from "../profile_small.jpeg";
 const Contacto = () => {
   return (
     <div
-      className="light-back"
+      className="light-back "
       style={{
         position: "relative",
         display: "flex",
@@ -34,6 +34,7 @@ const Contacto = () => {
       />
 
       <div
+        className="contact-section"
         style={{
           display: "flex",
           flexDirection: "row",
