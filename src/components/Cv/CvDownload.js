@@ -1,7 +1,9 @@
 import React from "react";
 import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import cv_photo from "./cv_download.png";
-import qr from "./qr.png";
+import qr from "./qr.jpg";
+import cv_pdf from "./CV_ANDRES_BANDA.pdf";
 
 const CvDownload = () => {
   return (
@@ -27,7 +29,9 @@ const CvDownload = () => {
             </div>
             <div className="pt-4">
               <h1 style={{ color: "#2d3135" }}>Download link</h1>
-              <Button className="btn-cv text-left">Download </Button>
+              <Link to={cv_pdf} target="_blank" download>
+                <Button className="btn-cv text-left">Download </Button>
+              </Link>
             </div>
           </div>
         </div>
