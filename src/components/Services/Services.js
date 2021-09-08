@@ -1,4 +1,5 @@
 import React from "react";
+import { Col, Row } from "react-bootstrap";
 import { FaGamepad, FaLock, FaMobile } from "react-icons/fa";
 import ServiceCard from "./ServiceCard";
 
@@ -10,8 +11,9 @@ const Services = () => {
         position: "relative",
         display: "flex",
         flexDirection: "column",
-        padding: "100px 120px 150px 120px",
+        padding: "7rem 3rem 7rem 3rem",
         textAlign: "center",
+        alignItems: "center",
       }}
     >
       <div
@@ -45,30 +47,38 @@ const Services = () => {
           margin: "0",
         }}
       >
-        <ServiceCard
-          FaMobile={FaMobile}
-          title="Web and Mobile"
-          description="  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+        <Row>
+          <Col md={4}>
+            <ServiceCard
+              FaMobile={FaMobile}
+              title="Web and Mobile"
+              description="  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
             ullamcorper semper egestas. Phasellus pharetra hendrerit urna, quis
             lobortis justo auctor ac. Cras at nibh sed massa ornare euismod.
             Cras mattis condimentum posuere."
-        />{" "}
-        <ServiceCard
-          FaMobile={FaGamepad}
-          title="Game Development"
-          description="  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+            />{" "}
+          </Col>
+          <Col md={4}>
+            <ServiceCard
+              FaMobile={FaGamepad}
+              title="Game Development"
+              description="  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
           ullamcorper semper egestas. Phasellus pharetra hendrerit urna, quis
           lobortis justo auctor ac. Cras at nibh sed massa ornare euismod.
           Cras mattis condimentum posuere."
-        />
-        <ServiceCard
-          FaMobile={FaLock}
-          title="Cibersecurity"
-          description="  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+            />
+          </Col>
+          <Col md={4}>
+            <ServiceCard
+              FaMobile={FaLock}
+              title="Cibersecurity"
+              description="  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
           ullamcorper semper egestas. Phasellus pharetra hendrerit urna, quis
           lobortis justo auctor ac. Cras at nibh sed massa ornare euismod.
           Cras mattis condimentum posuere."
-        />
+            />
+          </Col>
+        </Row>
       </div>
     </div>
   );

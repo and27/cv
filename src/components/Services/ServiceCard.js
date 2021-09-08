@@ -6,7 +6,7 @@ const ServiceCard = ({ FaMobile, title, description }) => {
       className="card m-2 card-service"
       style={{
         margin: "auto",
-        width: "450px",
+        // width: "450px",
       }}
     >
       <FaMobile size="3rem" style={{ margin: "30px auto", padding: "2 rem" }} />

@@ -37,7 +37,7 @@ const Home = () => {
             </h3>
           </div>
           <p className="cv-description pb-2" style={{ zIndex: "0" }}>
-            Computer Science Engineer. Web and Mobile developer. Entrepeneur
+            Web + Mobile + Blockchain developer based in Ecuador.
           </p>
           <Button className="btn-cv" style={{ zIndex: "0" }}>
             Contact me
@@ -48,7 +48,7 @@ const Home = () => {
         </div>
         <div
           className="main-social"
-          style={{ position: "absolute", top: "10px", right: "20px" }}
+          style={{ position: "absolute", top: "25px", right: "25px" }}
         >
           <a href="https://www.facebook.com/andro.b777/">
             <FaFacebookF size="1.75rem" style={{ margin: "10px" }} />
@@ -67,7 +67,7 @@ const Home = () => {
             left: "30px",
           }}
         >
-          <img src={logo} width="80px" />
+          <img src={logo} width="40px" />
         </div>
       </div>
     </div>

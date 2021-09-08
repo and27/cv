@@ -1,4 +1,5 @@
 import React from "react";
+import { Col, Row } from "react-bootstrap";
 import photo from "../profile_small.jpeg";
 
 const Contacto = () => {
@@ -23,7 +24,9 @@ const Contacto = () => {
           letf: "5%",
         }}
       >
-        <h3 style={{ fontSize: "150px", zIndex: "-1" }}>Contact</h3>
+        <h3 className="back-titles" style={{ fontSize: "150px", zIndex: "-1" }}>
+          Contact
+        </h3>
       </div>
       <h1 className="py-2 title-cv" style={{ zIndex: "1" }}>
         Contact
@@ -33,7 +36,7 @@ const Contacto = () => {
         style={{ margin: "0px auto 30px auto", border: "2px solid black" }}
       />
 
-      <div
+      <Row
         className="contact-section"
         style={{
           display: "flex",
@@ -43,21 +46,28 @@ const Contacto = () => {
           alignItems: "center",
         }}
       >
-        <img
-          src={photo}
-          style={{ borderRadius: "50%", width: "12rem", marginRight: "50px" }}
-        />
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            textAlign: "left",
-          }}
-        >
-          <p> Let's talk</p>
-          <h1>andres.banda.sm@gmail.com</h1>
-        </div>
-      </div>
+        <Col md={4}>
+          <img
+            src={photo}
+            style={{
+              borderRadius: "50%",
+              width: "12rem",
+            }}
+          />
+        </Col>
+        <Col md={8}>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              textAlign: "left",
+            }}
+          >
+            <p> Let's talk</p>
+            <h1 className="mail">andres.banda.sm@gmail.com</h1>
+          </div>
+        </Col>
+      </Row>
     </div>
   );
 };
