@@ -2,18 +2,21 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { FaBullhorn, FaLock, FaMobile } from "react-icons/fa";
 import ServiceCard from "./ServiceCard";
+import secure from "./securelab.png";
+import snacks from "./snacks.png";
+import ciodesia from "./ciodesia.png";
 
-const Services = () => {
+const Portfolio = () => {
   return (
     <div
-      id="services"
+      id="portfolio"
       className="light-back"
       style={{
         position: "relative",
         display: "flex",
         flexDirection: "column",
         padding: "7rem 3rem 7rem 3rem",
-        textAlign: "left",
+        textAlign: "center",
         alignItems: "center",
         paddingTop: "8rem",
       }}
@@ -28,12 +31,12 @@ const Services = () => {
         }}
       >
         <h3 className="back-titles" style={{ fontSize: "150px" }}>
-          Services
+          Portfolio
         </h3>
       </div>
 
       <h1 className="py-2 title-cv" style={{ zIndex: "1" }}>
-        Services
+        Portfolio
       </h1>
       <hr
         width="25px"
@@ -52,24 +55,24 @@ const Services = () => {
         <Row>
           <Col md={4}>
             <ServiceCard
-              FaMobile={FaMobile}
-              title="Web and Mobile"
-              description="Desarrollo de páginas web utilizando Wordpress, react, python, bases de datos."
+              title="Ciodesia"
+              description="Plataforma educativa con cursos de geografía desarrollada con Wordpress y learnpress."
+              img={ciodesia}
             />
           </Col>
 
           <Col md={4}>
             <ServiceCard
-              FaMobile={FaBullhorn}
-              title="Digital Marketing"
-              description="Estrategias de marketing digital, branding, redes sociales, growth hacking, email marketing. "
+              title="Secure Lab"
+              description="Plataforma educativa de ciberseguridad desarrollada con Wordpress"
+              img={secure}
             />
           </Col>
           <Col md={4}>
             <ServiceCard
-              FaMobile={FaLock}
-              title="Cibersecurity"
-              description="Análisis y pruebas de seguridad a sistemas informáticos. Charlas de seguridad informática y desarrollo de aplicaciones de hacking"
+              title="Snacks"
+              description="Plataforma con consejos de marketing digital desarrollada con React JS"
+              img={snacks}
             />
           </Col>
         </Row>
@@ -78,4 +81,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Portfolio;

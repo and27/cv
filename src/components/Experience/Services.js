@@ -1,21 +1,20 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { FaBullhorn, FaLock, FaMobile } from "react-icons/fa";
+import { FaGamepad, FaLock, FaMobile } from "react-icons/fa";
 import ServiceCard from "./ServiceCard";
 
-const Services = () => {
+const Experience = () => {
   return (
     <div
-      id="services"
       className="light-back"
       style={{
         position: "relative",
         display: "flex",
         flexDirection: "column",
         padding: "7rem 3rem 7rem 3rem",
-        textAlign: "left",
+        textAlign: "center",
         alignItems: "center",
-        paddingTop: "8rem",
+        marginTop: "5rem",
       }}
     >
       <div
@@ -23,21 +22,21 @@ const Services = () => {
           position: "absolute",
           color: "#eeeeee",
           zIndex: "0",
-          top: "6%",
+          top: "0",
           letf: "10%",
         }}
       >
         <h3 className="back-titles" style={{ fontSize: "150px" }}>
-          Services
+          Experience
         </h3>
       </div>
 
       <h1 className="py-2 title-cv" style={{ zIndex: "1" }}>
-        Services
+        Experience
       </h1>
       <hr
         width="25px"
-        style={{ margin: "0px auto 80px auto", border: "2px solid black" }}
+        style={{ margin: "0px auto 30px auto", border: "2px solid black" }}
       />
       <div
         style={{
@@ -60,16 +59,16 @@ const Services = () => {
 
           <Col md={4}>
             <ServiceCard
-              FaMobile={FaBullhorn}
-              title="Digital Marketing"
-              description="Estrategias de marketing digital, branding, redes sociales, growth hacking, email marketing. "
+              FaMobile={FaLock}
+              title="Cibersecurity"
+              description="Análisis y pruebas de seguridad a sistemas informáticos. Charlas de seguridad informática y desarrollo de aplicaciones de hacking"
             />
           </Col>
           <Col md={4}>
             <ServiceCard
-              FaMobile={FaLock}
-              title="Cibersecurity"
-              description="Análisis y pruebas de seguridad a sistemas informáticos. Charlas de seguridad informática y desarrollo de aplicaciones de hacking"
+              FaMobile={FaGamepad}
+              title="AI + Data science"
+              description="Desarrollo de app edtech para reconocer el estilo de aprendizaje de niños. Desarrollo de algoritmos de optimización matemática"
             />
           </Col>
         </Row>
@@ -78,4 +77,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Experience;

@@ -4,18 +4,21 @@
 }
 
 .card-service {
-  padding: 2rem;
+  padding: 2.5rem;
   background-color: #171717;
+  /* background-color: white; */
   color: white;
   border-radius: 7px;
-  cursor: pointer;
+  /* box-shadow: 2px 2px 2px #e7e7e7; */
+  box-shadow: 0.125rem 0.125rem 1rem rgb(0 0 0 / 20%);
+  transition: all 0.3s ease-out;
 }
 
 .card-service:hover {
-  background-color: #060606;
-}
-.card-service p {
-  color: gray;
+  background-color: #0c0c0c;
+  /* background-color: #0045ab; */
+  color: white;
+  transform: translate(0px, -10px) scale(1.03);
 }
 
 .title-cv {
@@ -30,11 +33,6 @@
   background-color: rgb(251 251 251);
 }
 
-.cv-description {
-  color: #929292;
-  font-size: 1.25rem;
-}
-
 .footer-text {
   color: #929292;
 }
@@ -44,6 +42,13 @@
   border-color: #0a58ca;
   background-color: #0a58ca;
   width: 9rem !important;
+}
+.btn-cv-secondary {
+  color: #fff;
+  border-color: #0a58ca;
+  background-color: transparent !important;
+  width: 9rem !important;
+  margin-left: 10px;
 }
 
 a {
@@ -69,7 +74,45 @@ a:hover {
   color: black;
 }
 
+.contact-ref {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-ref:hover {
+  color: rgb(219, 215, 215);
+  text-decoration: none;
+}
+
+.normal-text {
+  color: #727272 !important;
+}
+
+.hide {
+  display: none;
+}
+
+.containerCard:hover + .hide {
+  display: block;
+}
+
+/* .bg-dark {
+  background-color: transparent !important;
+} */
+
 @media only screen and (max-width: 900px) {
+  .normal-text {
+    margin-top: 2rem;
+  }
+  .skill-bars {
+    margin: 0 auto !important;
+    max-width: 20rem !important;
+  }
+
+  .download-cv {
+    padding-left: 2rem !important;
+  }
+
   .cv-title h1 {
     padding-top: 5rem;
   }
@@ -94,6 +137,25 @@ a:hover {
   .contact-section {
     padding: 5px !important;
     margin: 0px !important;
+  }
+
+  .main-social a {
+    color: gray;
+  }
+
+  .btn-cv,
+  .btn-cv-secondary {
+    margin-bottom: 3rem;
+  }
+
+  .main-photo-section {
+    display: none !important;
+  }
+  .aboutme-container {
+    margin-top: 0rem !important;
+  }
+  .aboutme-title {
+    margin-bottom: 1rem !important;
   }
 }
 
@@ -155,13 +217,13 @@ a:hover {
   background: #0a58ca;
   animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
-.bar .progress-line.html span {
-  width: 90%;
-}
-.bar .progress-line.css span {
+.bar .progress-line.unity span {
   width: 60%;
 }
-.bar .progress-line.jquery span {
+.bar .progress-line.linux span {
+  width: 60%;
+}
+.bar .progress-line.react span {
   width: 85%;
 }
 .bar .progress-line.python span {
@@ -202,13 +264,13 @@ a:hover {
     opacity: 1;
   }
 }
-.progress-line.html span::after {
-  content: "90%";
-}
-.progress-line.css span::after {
+.progress-line.unity span::after {
   content: "60%";
 }
-.progress-line.jquery span::after {
+.progress-line.linux span::after {
+  content: "60%";
+}
+.progress-line.react span::after {
   content: "85%";
 }
 .progress-line.python span::after {

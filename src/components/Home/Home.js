@@ -1,12 +1,25 @@
 import React from "react";
-import { Button } from "react-bootstrap";
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import photo from "../profile_complete.jpeg";
 import logo from "./logo.png";
 
 const Home = () => {
   return (
-    <div className="dark-back">
+    <div className="dark-back" id="welcome">
+      <Navbar bg="dark" variant="dark" fixed="top">
+        <Container>
+          <Navbar.Brand href="#home">
+            <img src={logo} width="40px" />
+          </Navbar.Brand>
+          <Nav className="m-auto">
+            <Nav.Link href="#welcome">Welcome</Nav.Link>
+            <Nav.Link href="#services">Services</Nav.Link>
+            <Nav.Link href="#portfolio">Portfolio</Nav.Link>
+            <Nav.Link href="#about">About Me</Nav.Link>
+            <Nav.Link href="#contact">Contact</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
       <div
         style={{
           minHeight: "100vh",
@@ -36,38 +49,23 @@ const Home = () => {
               Welcome
             </h3>
           </div>
-          <p className="cv-description pb-2" style={{ zIndex: "0" }}>
+          <p className="normal-text pb-2" style={{ zIndex: "0" }}>
             Web + Mobile + Blockchain developer based in Ecuador.
-          </p>
-          <Button className="btn-cv" style={{ zIndex: "0" }}>
-            Contact me
-          </Button>
+          </p>{" "}
+          <a
+            href="https://web.whatsapp.com/send?phone=593985119412&text=Hola Andrés ..."
+            className="contact-ref"
+          >
+            <Button className="btn-cv btn-cv-main" style={{ zIndex: "0" }}>
+              Contact
+            </Button>
+            <Button className="btn-cv-secondary" style={{ zIndex: "0" }}>
+              Download CV
+            </Button>
+          </a>
         </div>
-        <div className="d-flex">
+        <div className="d-flex main-photo-section">
           <img className="main-photo" src={photo} style={{ height: "100vh" }} />
-        </div>
-        <div
-          className="main-social"
-          style={{ position: "absolute", top: "25px", right: "25px" }}
-        >
-          <a href="https://www.facebook.com/andro.b777/">
-            <FaFacebookF size="1.75rem" style={{ margin: "10px" }} />
-          </a>
-          <a href="https://www.instagram.com/andro_b7/">
-            <FaInstagram size="2rem" style={{ margin: "10px" }} />
-          </a>
-          <a href="https://www.linkedin.com/in/andres-banda">
-            <FaLinkedinIn size="2rem" style={{ margin: "10px" }} />
-          </a>
-        </div>
-        <div
-          style={{
-            position: "absolute",
-            top: "30px",
-            left: "30px",
-          }}
-        >
-          <img src={logo} width="40px" />
         </div>
       </div>
     </div>

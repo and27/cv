@@ -5,6 +5,7 @@ import photo from "../profile_small.jpeg";
 const Contacto = () => {
   return (
     <div
+      id="contact"
       className="light-back "
       style={{
         position: "relative",
@@ -13,6 +14,7 @@ const Contacto = () => {
         padding: "80px",
         textAlign: "center",
         alignItems: "center",
+        marginTop: "4rem",
       }}
     >
       <div
@@ -63,8 +65,12 @@ const Contacto = () => {
               textAlign: "left",
             }}
           >
-            <p> Let's talk</p>
-            <h1 className="mail">andres.banda.sm@gmail.com</h1>
+            <p className="normal-text">
+              Some of the most creative projects start with a conversation.
+              <br /> Tell us about your ideas and let's work together.
+            </p>
+            {/* <h1 className="mail">andres.banda.sm@gmail.com</h1> */}
+            <h1 className="mail">hello@andres.banda.com</h1>
           </div>
         </Col>
       </Row>

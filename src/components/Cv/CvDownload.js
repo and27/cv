@@ -15,14 +15,20 @@ const CvDownload = () => {
           alignItems: "center",
         }}
       >
-        <Col md={4} className="px-0">
+        <Col md={4} className="px-0 py-1">
           <img
             src={cv_photo}
-            style={{ width: "100%", maxHeight: "40rem", objectFit: "cover" }}
+            style={{
+              width: "75%",
+              maxHeight: "40rem",
+              objectFit: "cover",
+              filter: "blur(3px)",
+            }}
           />
         </Col>
         <Col
           md={5}
+          className="download-cv"
           style={{
             paddingLeft: "6rem",
             paddingTop: "4rem",
@@ -40,6 +46,7 @@ const CvDownload = () => {
         </Col>
         <Col
           md={3}
+          className="download-cv"
           style={{
             paddingLeft: "6rem",
             paddingTop: "4rem",
