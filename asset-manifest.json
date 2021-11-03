@@ -1,20 +1,19 @@
 {
   "files": {
-    "main.css": "https://and27.github.io/cv/static/css/main.f1e1d2cc.chunk.css",
-    "main.js": "https://and27.github.io/cv/static/js/main.a5b18bf0.chunk.js",
-    "main.js.map": "https://and27.github.io/cv/static/js/main.a5b18bf0.chunk.js.map",
-    "runtime-main.js": "https://and27.github.io/cv/static/js/runtime-main.62d130ac.js",
-    "runtime-main.js.map": "https://and27.github.io/cv/static/js/runtime-main.62d130ac.js.map",
-    "static/js/2.e6de2b08.chunk.js": "https://and27.github.io/cv/static/js/2.e6de2b08.chunk.js",
-    "static/js/2.e6de2b08.chunk.js.map": "https://and27.github.io/cv/static/js/2.e6de2b08.chunk.js.map",
-    "static/js/3.aeb9069f.chunk.js": "https://and27.github.io/cv/static/js/3.aeb9069f.chunk.js",
-    "static/js/3.aeb9069f.chunk.js.map": "https://and27.github.io/cv/static/js/3.aeb9069f.chunk.js.map",
+    "main.css": "https://and27.github.io/cv/static/css/main.14c0f0c1.chunk.css",
+    "main.js": "https://and27.github.io/cv/static/js/main.eef71602.chunk.js",
+    "main.js.map": "https://and27.github.io/cv/static/js/main.eef71602.chunk.js.map",
+    "runtime-main.js": "https://and27.github.io/cv/static/js/runtime-main.393d6c07.js",
+    "runtime-main.js.map": "https://and27.github.io/cv/static/js/runtime-main.393d6c07.js.map",
+    "static/js/2.94603d5f.chunk.js": "https://and27.github.io/cv/static/js/2.94603d5f.chunk.js",
+    "static/js/2.94603d5f.chunk.js.map": "https://and27.github.io/cv/static/js/2.94603d5f.chunk.js.map",
+    "static/js/3.3f047fb3.chunk.js": "https://and27.github.io/cv/static/js/3.3f047fb3.chunk.js",
+    "static/js/3.3f047fb3.chunk.js.map": "https://and27.github.io/cv/static/js/3.3f047fb3.chunk.js.map",
     "index.html": "https://and27.github.io/cv/index.html",
-    "static/css/main.f1e1d2cc.chunk.css.map": "https://and27.github.io/cv/static/css/main.f1e1d2cc.chunk.css.map",
-    "static/js/2.e6de2b08.chunk.js.LICENSE.txt": "https://and27.github.io/cv/static/js/2.e6de2b08.chunk.js.LICENSE.txt",
+    "static/css/main.14c0f0c1.chunk.css.map": "https://and27.github.io/cv/static/css/main.14c0f0c1.chunk.css.map",
+    "static/js/2.94603d5f.chunk.js.LICENSE.txt": "https://and27.github.io/cv/static/js/2.94603d5f.chunk.js.LICENSE.txt",
     "static/media/CV_ANDRES_BANDA.26108110.pdf": "https://and27.github.io/cv/static/media/CV_ANDRES_BANDA.26108110.pdf",
     "static/media/ciodesia.4ecfc7d9.png": "https://and27.github.io/cv/static/media/ciodesia.4ecfc7d9.png",
-    "static/media/cv_download.abcc8596.png": "https://and27.github.io/cv/static/media/cv_download.abcc8596.png",
     "static/media/profile_complete.c2e66460.jpeg": "https://and27.github.io/cv/static/media/profile_complete.c2e66460.jpeg",
     "static/media/profile_small.2a6998de.jpeg": "https://and27.github.io/cv/static/media/profile_small.2a6998de.jpeg",
     "static/media/qr.df0fe6a9.jpg": "https://and27.github.io/cv/static/media/qr.df0fe6a9.jpg",
@@ -22,9 +21,9 @@
     "static/media/snacks.9c6aa569.png": "https://and27.github.io/cv/static/media/snacks.9c6aa569.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.62d130ac.js",
-    "static/js/2.e6de2b08.chunk.js",
-    "static/css/main.f1e1d2cc.chunk.css",
-    "static/js/main.a5b18bf0.chunk.js"
+    "static/js/runtime-main.393d6c07.js",
+    "static/js/2.94603d5f.chunk.js",
+    "static/css/main.14c0f0c1.chunk.css",
+    "static/js/main.eef71602.chunk.js"
   ]
 }
