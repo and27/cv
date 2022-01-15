@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "https://and27.github.io/cv/static/css/main.2b53b1e4.chunk.css",
-    "main.js": "https://and27.github.io/cv/static/js/main.7060ecd0.chunk.js",
-    "main.js.map": "https://and27.github.io/cv/static/js/main.7060ecd0.chunk.js.map",
+    "main.css": "https://and27.github.io/cv/static/css/main.dbe3f0c0.chunk.css",
+    "main.js": "https://and27.github.io/cv/static/js/main.c532b45a.chunk.js",
+    "main.js.map": "https://and27.github.io/cv/static/js/main.c532b45a.chunk.js.map",
     "runtime-main.js": "https://and27.github.io/cv/static/js/runtime-main.3fd18120.js",
     "runtime-main.js.map": "https://and27.github.io/cv/static/js/runtime-main.3fd18120.js.map",
     "static/js/2.b41739ac.chunk.js": "https://and27.github.io/cv/static/js/2.b41739ac.chunk.js",
@@ -10,10 +10,11 @@
     "static/js/3.d45f261e.chunk.js": "https://and27.github.io/cv/static/js/3.d45f261e.chunk.js",
     "static/js/3.d45f261e.chunk.js.map": "https://and27.github.io/cv/static/js/3.d45f261e.chunk.js.map",
     "index.html": "https://and27.github.io/cv/index.html",
-    "static/css/main.2b53b1e4.chunk.css.map": "https://and27.github.io/cv/static/css/main.2b53b1e4.chunk.css.map",
+    "static/css/main.dbe3f0c0.chunk.css.map": "https://and27.github.io/cv/static/css/main.dbe3f0c0.chunk.css.map",
     "static/js/2.b41739ac.chunk.js.LICENSE.txt": "https://and27.github.io/cv/static/js/2.b41739ac.chunk.js.LICENSE.txt",
     "static/media/CV_ANDRES_BANDA.26108110.pdf": "https://and27.github.io/cv/static/media/CV_ANDRES_BANDA.26108110.pdf",
     "static/media/ciodesia.4ecfc7d9.png": "https://and27.github.io/cv/static/media/ciodesia.4ecfc7d9.png",
+    "static/media/firmafinal.33fd9e7f.png": "https://and27.github.io/cv/static/media/firmafinal.33fd9e7f.png",
     "static/media/profile_complete.c2e66460.jpeg": "https://and27.github.io/cv/static/media/profile_complete.c2e66460.jpeg",
     "static/media/profile_small.2a6998de.jpeg": "https://and27.github.io/cv/static/media/profile_small.2a6998de.jpeg",
     "static/media/qr.df0fe6a9.jpg": "https://and27.github.io/cv/static/media/qr.df0fe6a9.jpg",
@@ -23,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.3fd18120.js",
     "static/js/2.b41739ac.chunk.js",
-    "static/css/main.2b53b1e4.chunk.css",
-    "static/js/main.7060ecd0.chunk.js"
+    "static/css/main.dbe3f0c0.chunk.css",
+    "static/js/main.c532b45a.chunk.js"
   ]
 }
