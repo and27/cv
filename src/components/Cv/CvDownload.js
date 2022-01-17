@@ -3,7 +3,7 @@ import { Button, Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import cv_photo from "./cv_download.png";
 import qr from "./qr.jpg";
-import cv_pdf from "./CV_ANDRES_BANDA.pdf";
+import cv_pdf from "./cv_ANDRES_BANDA_2022.pdf";
 
 const CvDownload = () => {
   return (

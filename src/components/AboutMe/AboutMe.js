@@ -1,23 +1,25 @@
 import React from "react";
 import { Button, Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import cv_pdf from "../Cv/CV_ANDRES_BANDA.pdf";
+import cv_pdf from "../Cv/cv_ANDRES_BANDA_2022.pdf";
 import qr from "../Cv/qr.jpg";
+import SectionContainer from "../SectionContainer/SectionContainer";
 
-const AboutMe = () => {
+const AboutMe = ({ setActiveElement }) => {
   return (
-    <>
+    <div id="about">
+      <SectionContainer
+        sectionName="about"
+        setActiveElement={setActiveElement}
+      />
       <div
-        id="about"
         className=""
         style={{
           position: "relative",
           display: "flex",
           flexDirection: "column",
-          padding: "60px",
           textAlign: "center",
           alignItems: "center",
-          marginTop: "3rem",
         }}
       >
         <div
@@ -25,7 +27,7 @@ const AboutMe = () => {
             position: "absolute",
             color: "#eeeeee",
             zIndex: "0",
-            top: "0",
+            top: "-80%",
             letf: "5%",
           }}
         >
@@ -38,25 +40,26 @@ const AboutMe = () => {
         </div>
 
         <h1 className="py-2 title-cv aboutme-title " style={{ zIndex: "1" }}>
-          About Me
+          Experience
         </h1>
         <hr
           width="25px"
           style={{ margin: "0px auto 30px auto", border: "2px solid black" }}
         />
       </div>
-      <Row className="m-5 aboutme-container">
-        <Col className="mx-5">
+      <Row className="aboutme-container">
+        <Col className="mx-3">
           <p className="normal-text " style={{ zIndex: "0" }}>
             I am a Software Engineer from Yachay Tech University (Ecuador). I
-            have 3 years of experience in web design and development. During
-            these years I have developed mobile applications using fluter,
-            react-native, ionic, unity and web (frontend) applications using
-            angular and react. Also, I have used python (Flask, Django), PHP
-            (Laravel), and Java (Spring Boot) to create APIs and backend
-            functionality. Currently, I am developing a web and mobile app for
-            Cognitiva company using React and React Native, to provide digital
-            solutions for manufacturing industry.
+            have three years of experience in web design and development. I am
+            also a Digital marketing enthusiast emphasizing analytics and
+            automatization. During these years, I have developed mobile
+            applications using Fluter, React-native, Ionic, Unity, and web
+            (frontend) applications using Angular and React. Also, I have used
+            python (Flask, Django), PHP (Laravel), and Java (Spring Boot) to
+            create APIs and backend functionality. Currently, I am developing a
+            web and mobile app for Cognitiva company using React and React
+            Native to provide digital solutions for the manufacturing industry.
           </p>
 
           <p className="normal-text ">
@@ -75,50 +78,53 @@ const AboutMe = () => {
         </Col>
         <Col>
           <div className="skill-bars  m-auto pb-5 mb-5">
-            <div class="bar">
-              <div class="info">
-                <span>Unity</span>
+            <h5 style={{ letterSpacing: "3px", color: "gray" }}>
+              MAIN PROGRAMMING SKILLS
+            </h5>
+            <div className="bar">
+              <div className="info">
+                <span>React (JS)</span>
               </div>
-              <div class="progress-line unity">
+              <div className="progress-line react">
                 <span></span>
               </div>
             </div>
-            <div class="bar">
-              <div class="info">
-                <span>Linux</span>
+            <div className="bar">
+              <div className="info">
+                <span>React Native</span>
               </div>
-              <div class="progress-line linux">
+              <div className="progress-line linux">
                 <span></span>
               </div>
             </div>
-            <div class="bar">
-              <div class="info">
-                <span>React (javascript)</span>
+            <div className="bar">
+              <div className="info">
+                <span>Linux and SysAdmin</span>
               </div>
-              <div class="progress-line react">
+              <div className="progress-line linux">
                 <span></span>
               </div>
             </div>
-            <div class="bar">
-              <div class="info">
-                <span>Python</span>
+            <div className="bar">
+              <div className="info">
+                <span>Python (Flask, Django)</span>
               </div>
-              <div class="progress-line python">
+              <div className="progress-line python">
                 <span></span>
               </div>
             </div>
-            <div class="bar">
-              <div class="info">
+            <div className="bar">
+              <div className="info">
                 <span>SQL</span>
               </div>
-              <div class="progress-line mysql">
+              <div className="progress-line mysql">
                 <span></span>
               </div>
             </div>
           </div>
         </Col>
       </Row>
-    </>
+    </div>
   );
 };
 

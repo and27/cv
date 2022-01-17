@@ -43,24 +43,27 @@ const ServiceCard = ({ FaMobile, title, description }) => {
 
         <h2
           className="title-cv pt-4"
-          style={{ borderBottom: "1px solid #0a58ca", paddingBottom: "1rem" }}
+          style={{ borderBottom: "1px solid #464646", paddingBottom: "1rem" }}
         >
           {title}
         </h2>
 
-        <p card-description style={{ color: "#d9d9d9" }}>
+        <p card-description style={{ color: "#727272" }}>
           {description}
         </p>
-        <Button
-          style={{
-            ...style,
-            zIndex: "0",
-            color: "#fff",
-            backgroundColor: "#171717 ",
-          }}
-        >
-          More information
-        </Button>
+        <a href="https://calendly.com/andres-banda/15min" target="_blank">
+          <Button
+            disabled
+            style={{
+              ...style,
+              zIndex: "0",
+              color: "#fff",
+              backgroundColor: "#171717 ",
+            }}
+          >
+            Schedule Appointment
+          </Button>
+        </a>
       </div>
     </>
   );

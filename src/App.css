@@ -5,17 +5,17 @@
 
 .card-service {
   padding: 2.5rem;
-  background-color: #171717;
+  background-color: white;
   /* background-color: white; */
-  color: white;
+  color: #171717;
   border-radius: 7px;
   /* box-shadow: 2px 2px 2px #e7e7e7; */
-  box-shadow: 0.125rem 0.125rem 1rem rgb(0 0 0 / 20%);
+  box-shadow: 0.125rem 0.125rem 1rem rgb(0 0 0 / 7%);
   transition: all 0.3s ease-out;
 }
 
 .card-service:hover {
-  background-color: #0c0c0c;
+  background-color: #171717;
   /* background-color: #0045ab; */
   color: white;
   transform: translate(0px, -10px) scale(1.03);
@@ -96,67 +96,23 @@ a:hover {
   display: block;
 }
 
-/* .bg-dark {
-  background-color: transparent !important;
-} */
+.bg-dark {
+  background-color: #1a1a1a !important;
+}
+#services,
+#portfolio,
+#about,
+#contact {
+  padding: 7rem 3rem 7rem 3rem;
+}
 
-@media only screen and (max-width: 900px) {
-  .normal-text {
-    margin-top: 2rem;
-  }
-  .skill-bars {
-    margin: 0 auto !important;
-    max-width: 20rem !important;
-  }
+.aboutme-container {
+  margin: 3rem 3rem 0rem 3rem !important;
+}
 
-  .download-cv {
-    padding-left: 2rem !important;
-  }
-
-  .cv-title h1 {
-    padding-top: 5rem;
-  }
-
-  .main-photo {
-    width: 100%;
-    max-height: 30rem;
-    object-fit: cover;
-  }
-
-  .back-titles {
-    display: none;
-  }
-
-  .main-section {
-    padding: 1rem;
-  }
-
-  .mail {
-    font-size: 20px;
-  }
-  .contact-section {
-    padding: 5px !important;
-    margin: 0px !important;
-  }
-
-  .main-social a {
-    color: gray;
-  }
-
-  .btn-cv,
-  .btn-cv-secondary {
-    margin-bottom: 3rem;
-  }
-
-  .main-photo-section {
-    display: none !important;
-  }
-  .aboutme-container {
-    margin-top: 0rem !important;
-  }
-  .aboutme-title {
-    margin-bottom: 1rem !important;
-  }
+/* Navigation */
+.navbar-dark .navbar-nav .nav-link {
+  padding-left: 2rem !important;
 }
 
 /* skill bars */
@@ -166,8 +122,8 @@ a:hover {
   background: black;
 }
 .skill-bars {
-  padding: 25px 30px;
-  width: 50rem;
+  padding: 5px 30px;
+  width: 40rem;
   background: #fff;
   border-radius: 10px;
 }
@@ -278,4 +234,92 @@ a:hover {
 }
 .progress-line.mysql span::after {
   content: "75%";
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+  .back-titles {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .normal-text {
+    margin-top: 2rem;
+  }
+  .skill-bars {
+    margin: 0 auto !important;
+    max-width: 15rem !important;
+  }
+
+  .download-cv {
+    padding-left: 2rem !important;
+  }
+
+  .cv-title h1 {
+    padding-top: 5rem;
+  }
+
+  .main-photo {
+    width: 100%;
+    max-height: 30rem;
+    object-fit: cover;
+  }
+
+  .back-titles {
+    display: none;
+  }
+
+  .main-section {
+    padding: 1rem;
+    padding-left: 2rem !important;
+  }
+
+  .main-section-description {
+    width: 80vw !important;
+  }
+
+  .mail {
+    font-size: 20px;
+  }
+  .contact-section {
+    padding: 5px !important;
+    margin: 0px !important;
+  }
+
+  .main-social a {
+    color: gray;
+  }
+
+  .btn-cv,
+  .btn-cv-secondary {
+    margin-bottom: 3rem;
+  }
+
+  .main-photo-section {
+    display: none !important;
+  }
+  .aboutme-container {
+    margin: 1rem !important;
+  }
+  .aboutme-title {
+    margin-bottom: 1rem !important;
+  }
+
+  #services,
+  #portfolio,
+  #about,
+  #contact {
+    padding: 5rem 1rem 5rem 1rem;
+  }
+
+  .skill-bars {
+    padding: 25px 0px !important;
+  }
+}
+
+/*nav active element highlight*/
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .show > .nav-link {
+  font-size: 20px;
+  margin-top: -3px;
 }

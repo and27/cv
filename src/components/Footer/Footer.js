@@ -1,9 +1,10 @@
 import React from "react";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
-const Footer = () => {
+const Footer = React.forwardRef(({ props, ref2 }) => {
   return (
     <div
+      ref={ref2}
       className="dark-back"
       style={{
         display: "flex",
@@ -21,11 +22,11 @@ const Footer = () => {
           <FaLinkedinIn size="2rem" style={{ margin: "10px" }} />
         </a>
       </div>
-      <p className="footer-text" style={{ margin: "15px auto" }}>
-        Developed by AB | All rights reserved ©
+      <p className="footer-text text-center" style={{ margin: "15px auto" }}>
+        Developed with React by Andrés | All rights reserved ©
       </p>
     </div>
   );
-};
+});
 
 export default Footer;

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 
-const ServiceCard = ({ title, description, img }) => {
+const ServiceCard = ({ title, description, img, url }) => {
   const [style, setStyle] = useState({
     visibility: "hidden",
     opacity: 0,
@@ -63,8 +63,7 @@ const ServiceCard = ({ title, description, img }) => {
           className="title-cv"
           style={{
             backgroundColor: "transparent",
-            borderBottom: "1px solid #0a58ca",
-            color: "white",
+            borderBottom: "1px solid #464646",
             margin: "2rem 2rem 0.5rem 2rem",
             paddingBottom: "1rem",
             borderRadius: "5px",
@@ -73,18 +72,20 @@ const ServiceCard = ({ title, description, img }) => {
         >
           {title}
         </h2>
-        <p style={{ padding: "0rem 2rem", color: "#d9d9d9" }}>{description}</p>
-        <Button
-          style={{
-            ...style,
-            zIndex: "0",
-            color: "#fff",
-            backgroundColor: "#171717 ",
-            marginLeft: "2rem",
-          }}
-        >
-          Visit site
-        </Button>
+        <p style={{ padding: "0rem 2rem", color: "#727272" }}>{description}</p>
+        <a href={url} target="_black">
+          <Button
+            style={{
+              ...style,
+              zIndex: "0",
+              color: "#fff",
+              backgroundColor: "#171717 ",
+              marginLeft: "2rem",
+            }}
+          >
+            Visit site
+          </Button>
+        </a>
       </div>
     </>
   );
