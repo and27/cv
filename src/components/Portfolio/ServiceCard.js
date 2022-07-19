@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 
-const ServiceCard = ({ title, description, img, url }) => {
+const ServiceCard = ({ title, description, stack, img, url }) => {
   const [style, setStyle] = useState({
     visibility: "hidden",
     opacity: 0,
@@ -10,10 +10,9 @@ const ServiceCard = ({ title, description, img, url }) => {
   return (
     <>
       <div
-        className="m-2 card-service containerCard"
+        className="m-2 pb-2 p-0 card-service containerCard"
         style={{
           margin: "auto",
-          padding: "0rem 0rem 2rem 0rem",
           position: "relative",
           zIndex: 0,
           textAlign: "left",
@@ -35,57 +34,47 @@ const ServiceCard = ({ title, description, img, url }) => {
             style={{ width: "100%", zIndex: "-6", position: "relative" }}
           />
         </div>
-        {/* <div
-          style={{
-            backgroundColor: "#3d72bf",
-            borderRadius: "50%",
-            width: "1rem",
-            height: "1rem",
-            bottom: "12rem",
-            left: "9rem",
-            position: "absolute",
-            zIndex: "-1",
-          }}
-        ></div> */}
         <div
           style={{
-            backgroundColor: "#0a58ca",
             borderRadius: "50%",
-            width: "5rem",
-            height: "5rem",
-            bottom: "10rem",
-            left: "5px",
+            border: "1px dashed blue",
+            width: "4rem",
+            height: "4rem",
+            lineHeight: "5rem",
             position: "absolute",
-            zIndex: "-2",
+            zIndex: "-1",
+            bottom: "12.5rem",
+            left: "-0.5rem",
           }}
         ></div>
-        <h2
-          className="title-cv"
-          style={{
-            backgroundColor: "transparent",
-            borderBottom: "1px solid #464646",
-            margin: "2rem 2rem 0.5rem 2rem",
-            paddingBottom: "1rem",
-            borderRadius: "5px",
-            fontSize: "25px",
-          }}
-        >
-          {title}
-        </h2>
-        <p style={{ padding: "0rem 2rem", color: "#727272" }}>{description}</p>
-        <a href={url} target="_black">
-          <Button
+        <div className="m-4">
+          <h2
+            className="title-cv mb-0"
             style={{
-              ...style,
-              zIndex: "0",
-              color: "#fff",
-              backgroundColor: "#171717 ",
-              marginLeft: "2rem",
+              borderRadius: "5px",
+              fontSize: "26px",
+              display: "inline-block",
             }}
           >
-            Visit site
-          </Button>
-        </a>
+            {title}
+          </h2>
+          <p className="text-muted">{stack}</p>
+          <hr />
+          <p style={{ color: "#727272" }}>{description}</p>
+          <a href={url} target="_black">
+            <Button
+              style={{
+                zIndex: "0",
+                color: "#fff",
+                padding: "0.5rem 1.5rem",
+                backgroundColor:
+                  style.opacity === 0 ? "#0a58ca" : "transparent",
+              }}
+            >
+              Visit site
+            </Button>
+          </a>
+        </div>
       </div>
     </>
   );

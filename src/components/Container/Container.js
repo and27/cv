@@ -47,18 +47,23 @@ const Container = () => {
     }
   }, [elementPosition, socialPosition]);
 
-  useEffect(() => {
-    console.log(activeElement);
-  }, [activeElement]);
   return (
     <>
       <Navbar bg="dark" variant="dark" fixed="top" expand="md">
-        <C>
+        <C
+          className="d-flex "
+          style={{
+            padding: "1rem",
+          }}
+        >
           <Navbar.Brand href="#welcome">
-            <img src={firmafinal} width="200px" />
+            <img src={firmafinal} width="180px" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Collapse
+            id="basic-navbar-nav"
+            style={{ justifyContent: "flex-end" }}
+          >
             <Nav className="">
               <Nav.Link href="#welcome" active={activeElement === "welcome"}>
                 Welcome

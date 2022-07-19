@@ -1,8 +1,6 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import photo from "../profile_complete.jpeg";
-import { Link } from "react-router-dom";
-import cv_pdf from "../Cv/cv_ANDRES_BANDA_2022.pdf";
 import SectionContainer from "../SectionContainer/SectionContainer";
 
 const Home = ({ setActiveElement }) => {
@@ -17,7 +15,6 @@ const Home = ({ setActiveElement }) => {
           style={{
             minHeight: "100vh",
             display: "flex",
-            // flexWrap: "wrap",
             flexDirection: "row",
             alignItems: "center",
             justifyContent: "flex-start",
@@ -31,9 +28,10 @@ const Home = ({ setActiveElement }) => {
               paddingLeft: "10rem",
             }}
           >
-            <h1 style={{ color: "white", zIndex: "2" }}>
-              Hi, I'm <br /> Andrés Banda
-            </h1>
+            <div>
+              <h2 style={{ color: "#ddd" }}>Hey, I'm</h2>
+              <h1 style={{ color: "white" }}>Andrés Banda</h1>
+            </div>
             <div
               style={{
                 position: "absolute",
@@ -41,18 +39,14 @@ const Home = ({ setActiveElement }) => {
                 color: "#101010",
                 zIndex: "0",
               }}
-            >
-              <h3 className="back-titles" style={{ fontSize: "8rem" }}>
-                Welcome
-              </h3>
-            </div>
+            ></div>
             <p
               className="normal-text pb-2 main-section-description"
               style={{ zIndex: "0", width: "30vw" }}
             >
-              Software developer focused on contributing to startups and
-              technology-based companies by creating and improving digital
-              products.
+              Software developer with over 2 years of front-end experience
+              contributing to startups and technology-based companies to create,
+              maintain and optimize digital products.
             </p>
             <div>
               <a className="contact-ref" href="#contact">
@@ -60,11 +54,11 @@ const Home = ({ setActiveElement }) => {
                   Contact
                 </Button>
               </a>
-              <Link to={cv_pdf} target="_blank" download>
+              {/* <Link to={cv_pdf} target="_blank" download>
                 <Button className="btn-cv-secondary" style={{ zIndex: "0" }}>
                   Download CV
                 </Button>
-              </Link>
+              </Link> */}
             </div>
           </div>
           <div className="d-flex main-photo-section">
