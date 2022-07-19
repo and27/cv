@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://and27.github.io/cv/static/css/main.9c2148eb.css",
-    "main.js": "https://and27.github.io/cv/static/js/main.0ff50c5b.js",
+    "main.js": "https://and27.github.io/cv/static/js/main.dc51df9d.js",
     "static/js/787.afcbbbf6.chunk.js": "https://and27.github.io/cv/static/js/787.afcbbbf6.chunk.js",
     "static/media/securelab.png": "https://and27.github.io/cv/static/media/securelab.ba99e3fe380e24278605.png",
     "static/media/snacks.png": "https://and27.github.io/cv/static/media/snacks.9c6aa5698e2236e4129a.png",
@@ -12,11 +12,11 @@
     "static/media/foto_perfil.jpg": "https://and27.github.io/cv/static/media/foto_perfil.e841cd58d5a5f321c8c7.jpg",
     "index.html": "https://and27.github.io/cv/index.html",
     "main.9c2148eb.css.map": "https://and27.github.io/cv/static/css/main.9c2148eb.css.map",
-    "main.0ff50c5b.js.map": "https://and27.github.io/cv/static/js/main.0ff50c5b.js.map",
+    "main.dc51df9d.js.map": "https://and27.github.io/cv/static/js/main.dc51df9d.js.map",
     "787.afcbbbf6.chunk.js.map": "https://and27.github.io/cv/static/js/787.afcbbbf6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9c2148eb.css",
-    "static/js/main.0ff50c5b.js"
+    "static/js/main.dc51df9d.js"
   ]
 }
