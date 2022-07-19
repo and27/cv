@@ -60,7 +60,7 @@ const Experience = () => {
           <Col md={4}>
             <ServiceCard
               FaMobile={FaLock}
-              title="Cibersecurity"
+              title="Cybersecurity"
               description="Information Security and Assurance, Vulnerability Assessment, Penetration Testing, Source Code Audit, Web Server Pen-testing. Talks on computer security and development of hacking applications."
             />
           </Col>

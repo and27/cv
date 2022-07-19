@@ -60,26 +60,29 @@ const Portfolio = ({ setActiveElement }) => {
             <Col md={4}>
               <ServiceCard
                 title="Ciodesia"
-                description="Plataforma educativa con cursos de geografía desarrollada con Wordpress y learnpress."
+                description="Ciodesia is an education platform to provide training and services related to geography."
                 img={ciodesia}
                 url="https://ciodesia.com"
+                stack="Wordpress, Divi, Learnpress"
               />
             </Col>
 
             <Col md={4}>
               <ServiceCard
                 title="Secure Lab"
-                description="Plataforma educativa de ciberseguridad desarrollada con Wordpress"
+                description="Secure Lab (Hacker Club) is a cybersecurity training platform for IT professionals."
                 img={secure}
-                url="https://securelab.cc"
+                url="https://hackerclub.cc"
+                stack="Wordpress, Divi"
               />
             </Col>
             <Col md={4}>
               <ServiceCard
                 title="Snacks"
-                description="Plataforma con consejos de marketing digital desarrollada con React JS"
+                description="Snacks website provides actionable tips and pieces of advice about digital marketing."
                 img={snacks}
                 url="https://snacks.cf"
+                stack="React JS"
               />
             </Col>
           </Row>

@@ -57,9 +57,9 @@ const AboutMe = ({ setActiveElement }) => {
             applications using Fluter, React-native, Ionic, Unity, and web
             (frontend) applications using Angular and React. Also, I have used
             python (Flask, Django), PHP (Laravel), and Java (Spring Boot) to
-            create APIs and backend functionality. Currently, I am developing a
-            web and mobile app for Cognitiva company using React and React
-            Native to provide digital solutions for the manufacturing industry.
+            create APIs and backend functionality. Currently, I am working as a
+            full stack developer at Wiibiq to provide digital solutions for the
+            manufacturing industry.
           </p>
 
           <p className="normal-text ">

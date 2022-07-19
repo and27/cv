@@ -73,8 +73,8 @@ const Services = ({ setActiveElement }) => {
             <Col md={4}>
               <ServiceCard
                 FaMobile={FaLock}
-                title="Cibersecurity"
-                description="Information security and assurance, vulnerability assessment, source code audit, web and network pen-testing. Talks on cibersecurity, free software and networking."
+                title="Cybersecurity"
+                description="Information security and assurance, vulnerability assessment, source code audit, web and network pen-testing. Talks on cybersecurity, free software and networking."
               />
             </Col>
           </Row>

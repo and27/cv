@@ -43,7 +43,10 @@ const ServiceCard = ({ FaMobile, title, description }) => {
 
         <h2
           className="title-cv pt-4"
-          style={{ borderBottom: "1px solid #464646", paddingBottom: "1rem" }}
+          style={{
+            borderBottom: "1px solid #464646",
+            paddingBottom: "1rem",
+          }}
         >
           {title}
         </h2>
@@ -61,7 +64,7 @@ const ServiceCard = ({ FaMobile, title, description }) => {
               backgroundColor: "#171717 ",
             }}
           >
-            Schedule Appointment
+            1-on-1 coaching session
           </Button>
         </a>
       </div>

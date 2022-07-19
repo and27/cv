@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Col, Row } from "react-bootstrap";
-import photo from "../profile_small.jpeg";
+import photo from "../foto_perfil.jpg";
 import { RiWhatsappFill } from "react-icons/ri";
 import SectionContainer from "../SectionContainer/SectionContainer";
 
@@ -39,7 +39,7 @@ const Contacto = ({ setActiveElement }) => {
           </h3>
         </div>
         <h1 className="py-2 title-cv" style={{ zIndex: "1" }}>
-          Contact
+          Let's connect
         </h1>
         <hr
           width="25px"
@@ -75,7 +75,7 @@ const Contacto = ({ setActiveElement }) => {
             >
               <p className="normal-text">
                 Some of the most creative projects start with a conversation.
-                <br /> Tell us about your ideas and let's work together.
+                <br /> Let's create something together.
               </p>
               {/* <h1 className="mail">andres.banda.sm@gmail.com</h1> */}
               <h1 className="mail">andres.banda.sm@gmail.com</h1>
