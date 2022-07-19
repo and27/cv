@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import cv_pdf from "../Cv/cv_ANDRES_BANDA_2022.pdf";
 import qr from "../Cv/qr.jpg";
 import SectionContainer from "../SectionContainer/SectionContainer";
+import SectionTitle from "../SectionTitle";
 
 const AboutMe = ({ setActiveElement }) => {
   return (
@@ -12,41 +13,7 @@ const AboutMe = ({ setActiveElement }) => {
         sectionName="about"
         setActiveElement={setActiveElement}
       />
-      <div
-        className=""
-        style={{
-          position: "relative",
-          display: "flex",
-          flexDirection: "column",
-          textAlign: "center",
-          alignItems: "center",
-        }}
-      >
-        <div
-          style={{
-            position: "absolute",
-            color: "#eeeeee",
-            zIndex: "0",
-            top: "-80%",
-            letf: "5%",
-          }}
-        >
-          <h3
-            className="back-titles"
-            style={{ fontSize: "150px", zIndex: "-1" }}
-          >
-            About Me
-          </h3>
-        </div>
-
-        <h1 className="py-2 title-cv aboutme-title " style={{ zIndex: "1" }}>
-          Experience
-        </h1>
-        <hr
-          width="25px"
-          style={{ margin: "0px auto 30px auto", border: "2px solid black" }}
-        />
-      </div>
+      <SectionTitle mainTitle="Experience" backgroundTitle="About me" />
       <Row className="aboutme-container">
         <Col className="mx-3">
           <p className="normal-text " style={{ zIndex: "0" }}>

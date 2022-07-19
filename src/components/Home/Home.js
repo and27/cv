@@ -23,13 +23,13 @@ const Home = ({ setActiveElement }) => {
           <div
             className="cv-title d-flex flex-column main-section "
             style={{
-              margin: "0 auto",
+              margin: "auto",
               position: "relative",
               paddingLeft: "10rem",
             }}
           >
             <div>
-              <h2 style={{ color: "#ddd" }}>Hey, I'm</h2>
+              <h2 style={{ color: "#ddd", paddingTop: "2rem" }}>Hey, I'm</h2>
               <h1 style={{ color: "white" }}>Andrés Banda</h1>
             </div>
             <div

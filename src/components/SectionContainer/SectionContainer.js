@@ -13,7 +13,6 @@ const SectionContainer = ({ sectionName, setActiveElement }) => {
     elementRef
   );
   useEffect(() => {
-    console.log(elementPosition);
     if (elementPosition === 0) {
       setActiveElement("welcome");
     } else if (elementPosition <= 50 && !(elementPosition < -500)) {
